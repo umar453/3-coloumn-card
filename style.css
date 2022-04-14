@@ -72,7 +72,7 @@ section{
     background-color: var(--Dark_cyan);
 }
 .btn{
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     padding-left: 3rem;
 }
 .btn button{
