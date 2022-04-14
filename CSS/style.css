@@ -1,0 +1,109 @@
+:root{
+    --bright-orange:hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    --Transparent_white: hsla(0, 0%, 100%, 0.75);
+    --Very_light_gray: hsl(0, 6%, 83%);
+}
+
+/* - Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    background-color: var(--Very_light_gray);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-items:center;
+    align-items: center;
+}
+.wrapper{
+    height: 60%;
+    width: 60%;
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    
+    gap: 0;
+    /* align-item: center;
+    justify-items: center;
+    place-items: center; */
+
+}
+.card-1{
+    height: 100%;
+    background-color: var(--bright-orange);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius:1rem ;
+}
+.img img{
+    padding-top: 3rem ;
+    padding-left: 2rem;
+}
+.txt h2{
+    padding-left: 3rem;
+    padding-top: 2rem;
+    color: var(--Transparent_white);
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 2rem;
+}
+.txt p{
+    padding-left: 3rem;
+    padding-top: 2rem;
+    padding-right: 3rem;
+    color: var(--Transparent_white);
+    line-height: 1.3;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+
+}
+.card-2{
+    height: 100%;
+    background-color: var(--Dark_cyan);
+}
+.btn{
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+.btn button{
+    width: 8rem;
+    height: 2.5rem;
+    border: 2px solid var(--Transparent_white);
+    border-radius: 2rem;
+    background: transparent;
+    color: var(--Transparent_white);
+    font-size: 0.8rem;
+    font-weight: 550;
+    font-family: lexend Deca;
+
+}
+.card-1 button:hover{
+    background-color:var(--Transparent_white);
+    color: var(--bright-orange);
+}
+.card-2 button:hover{
+    background-color:var(--Transparent_white);
+    color:var(--Dark_cyan);
+}
+.card-3 button:hover{
+    background-color:var(--Transparent_white);
+    color:var(--Very_dark_cyan);
+}
+.card-3{
+    height: 100%;
+    background-color: var(--Very_dark_cyan);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius:1rem ;
+}
+
+
